@@ -9,7 +9,7 @@ export default function Home() {
         <div className="flex flex-row justify-start items-center gap-x-4">
           <div className="h-fit w-24">
             <Image
-              src="/profile.jpg"
+              src="/profile.JPG"
               alt="profile"
               className="rounded-3xl"
               width={500}
