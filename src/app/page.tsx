@@ -5,7 +5,9 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {
-  const [order, setOrder] = useState<Array<number>>([1, 2, 3, 4, 5, 6]);
+  const [order, setOrder] = useState<Array<number>>([
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+  ]);
   const rotateOrder = () => {
     let temp = [...order];
     temp.push(temp.shift() as number);
@@ -16,7 +18,7 @@ export default function Home() {
       <div className="w-5/6 sm:w-3/4 md:w-2/3 lg:w-1/3 flex flex-col gap-y-16 py-16">
         <div className="flex flex-row gap-x-8 h-36 items-end">
           <div className="h-fit w-24 relative">
-            {Array.from({ length: 6 }).map((_, index) => (
+            {Array.from({ length: 12 }).map((_, index) => (
               <button key={index} onClick={() => rotateOrder()}>
                 <Image
                   src={`/profile${index + 1}.JPG`}
