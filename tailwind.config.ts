@@ -71,10 +71,52 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "to-front": {
+          "0%": {
+            transform: "rotate(3deg) translateX(0.5rem) translateY(0.5rem)",
+            opacity: "50%",
+          },
+          "50%": {
+            transform: "rotate(-12deg) translateX(-3.5rem) translateY(-3.5rem)",
+            opacity: "50%",
+          },
+          "100%": {
+            transform: "rotate(0deg) translateX(0rem) translateY(0rem)",
+            opacity: "100%",
+          },
+        },
+        "to-middle": {
+          "0%": {
+            transform: "rotate(0deg) translateX(0rem) translateY(0rem)",
+          },
+          "50%": {
+            transform: "rotate(12deg)",
+          },
+          "100%": {
+            transform: "rotate(3deg) translateX(0.5rem) translateY(0.5rem)",
+          },
+        },
+        "fade-out": {
+          "0%": {
+            transform: "rotate(0deg) translateX(0rem) translateY(0rem)",
+            opacity: "100%",
+          },
+          "50%": {
+            transform: "rotate(12deg) translateX(2rem) translateY(2rem)",
+            opacity: "10%",
+          },
+          "100%": {
+            transform: "rotate(0deg) translateX(0rem) translateY(0rem)",
+            opacity: "0%",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "to-front": "to-front 0.3s linear",
+        "to-middle": "to-middle 0.3s ease-in-out",
+        "fade-out": "fade-out 0.3s ease-in-out",
       },
     },
   },
