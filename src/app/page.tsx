@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex items-center w-full align-middle justify-center">
-      <div className="w-4/5 sm:w-3/4 md:w-2/3 lg:w-1/3 flex flex-col gap-y-16 py-16">
+      <div className="w-5/6 sm:w-3/4 md:w-2/3 lg:w-1/3 flex flex-col gap-y-16 py-16">
         <div className="flex flex-row justify-start items-center gap-x-4">
           <div className="h-fit w-24">
             <Image
@@ -41,7 +41,7 @@ export default function Home() {
           <span className="text-sm">Work Experience</span>
           <div className="flex flex-col gap-y-4">
             <div className="flex flex-row justify-start">
-              <div className="w-96">
+              <div className="w-80 sm:w-96">
                 <span className="text-muted-foreground text-sm">
                   Apr. 2023 - Present
                 </span>
@@ -62,7 +62,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-row justify-start">
-              <div className="w-96">
+              <div className="w-80 sm:w-96">
                 <span className="text-muted-foreground text-sm w-96 pr-4">
                   Jan. 2023 - Apr. 2023
                 </span>
@@ -75,7 +75,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-row justify-start">
-              <div className="w-96">
+              <div className="w-80 sm:w-96">
                 <span className="text-muted-foreground text-sm w-96 pr-4">
                   Sept. 2022 - Dec. 2023
                 </span>
@@ -88,7 +88,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-row justify-start">
-              <div className="w-96">
+              <div className="w-80 sm:w-96">
                 <span className="text-muted-foreground text-sm w-96 pr-4">
                   Jan. 2022 - June. 2022
                 </span>
@@ -106,7 +106,7 @@ export default function Home() {
           <span className="text-sm">Projects</span>
           <div className="flex flex-col gap-y-4">
             <div className="flex flex-row justify-start">
-              <div className="w-96">
+              <div className="w-80 sm:w-96">
                 <span className="text-muted-foreground text-sm">Ongoing</span>
               </div>
               <div className="flex flex-col gap-y-1 w-full">
@@ -131,7 +131,7 @@ export default function Home() {
           <span className="text-sm">Education</span>
           <div className="flex flex-col gap-y-4">
             <div className="flex flex-row justify-start">
-              <div className="w-96">
+              <div className="w-80 sm:w-96">
                 <span className="text-muted-foreground text-sm">
                   2018 - 2022
                 </span>
@@ -152,7 +152,7 @@ export default function Home() {
           <span className="text-sm">Contact</span>
           <div className="flex flex-col gap-y-2">
             <div className="flex flex-row justify-start">
-              <div className="w-96">
+              <div className="w-80 sm:w-96">
                 <span className="text-muted-foreground text-sm">LinkedIn</span>
               </div>
               <div className="flex flex-col w-full">
@@ -165,7 +165,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-row justify-start">
-              <div className="w-96">
+              <div className="w-80 sm:w-96">
                 <span className="text-muted-foreground text-sm">Github</span>
               </div>
               <div className="flex flex-col w-full">
@@ -178,7 +178,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-row justify-start">
-              <div className="w-96">
+              <div className="w-80 sm:w-96">
                 <span className="text-muted-foreground text-sm">Email</span>
               </div>
               <div className="flex flex-col w-full">
