@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Header = () => {
   const [order, setOrder] = useState<Array<number>>(
-    Array.from({ length: 10 }, (_, i) => i + 1)
+    Array.from({ length: 12 }, (_, i) => i + 1)
   );
   const rotateOrder = () => {
     let temp = [...order];
