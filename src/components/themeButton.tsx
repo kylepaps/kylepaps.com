@@ -1,18 +1,28 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
 const ThemeButton = () => {
-  const { theme, setTheme } = useTheme();
+  const { theme, resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   useEffect(() => {
-    setTheme("system");
+    setMounted(true);
   }, []);
+  if (!mounted) {
+    return null;
+  }
+  if (resolvedTheme === "light") {
+    setTheme("light");
+  }
+  if (resolvedTheme === "dark") {
+    setTheme("dark");
+  }
   if (theme === "light") {
     return <button onClick={() => setTheme("dark")}>🤠</button>;
-  } else if (theme === "dark") {
+  }
+  if (theme === "dark") {
     return <button onClick={() => setTheme("light")}>🫨</button>;
   }
-  return <button onClick={() => setTheme("light")}>🫨</button>;
 };
 
 export default ThemeButton;
