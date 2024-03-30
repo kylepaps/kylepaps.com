@@ -1,10 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { useTheme } from "next-themes";
+import dynamic from "next/dynamic";
+
+const ThemeButton = dynamic(() => import("./themeButton"), { ssr: false });
 
 const Header = () => {
-  const { theme, setTheme } = useTheme();
   const [order, setOrder] = useState<Array<number>>(
     Array.from({ length: 12 }, (_, i) => i + 1)
   );
@@ -42,13 +43,7 @@ const Header = () => {
           Kyle Papizewski
         </span>
         <div>
-          <span className="text-sm">Software Developer </span>{" "}
-          {theme === "dark" && (
-            <button onClick={() => setTheme("light")}>🫨</button>
-          )}
-          {theme === "light" && (
-            <button onClick={() => setTheme("dark")}>🤠</button>
-          )}
+          <span className="text-sm">Software Developer</span> <ThemeButton />
         </div>
       </div>
     </div>
