@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import dynamic from "next/dynamic";
+import ThemeButton from "./themeButton";
+// import dynamic from "next/dynamic";
 
-const ThemeButton = dynamic(() => import("./themeButton"), { ssr: false });
+// const ThemeButton = dynamic(() => import("./themeButton"), { ssr: false });
 
 const Header = () => {
   const [order, setOrder] = useState<Array<number>>(

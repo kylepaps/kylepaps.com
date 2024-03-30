@@ -1,9 +1,12 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { useTheme } from "next-themes";
 
 const ThemeButton = () => {
   const { theme, setTheme } = useTheme();
+  useEffect(() => {
+    setTheme("system");
+  }, []);
   if (theme === "light") {
     return <button onClick={() => setTheme("dark")}>🤠</button>;
   } else if (theme === "dark") {
