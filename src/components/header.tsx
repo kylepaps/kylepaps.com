@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 
 const Header = () => {
+  const { theme, setTheme } = useTheme();
   const [order, setOrder] = useState<Array<number>>(
     Array.from({ length: 12 }, (_, i) => i + 1)
   );
@@ -39,7 +41,15 @@ const Header = () => {
         <span className="scroll-m-20 text-lg tracking-tight">
           Kyle Papizewski
         </span>
-        <span className="text-sm">Software Developer 🤠</span>
+        <div>
+          <span className="text-sm">Software Developer </span>{" "}
+          {theme === "dark" && (
+            <button onClick={() => setTheme("light")}>🫨</button>
+          )}
+          {theme === "light" && (
+            <button onClick={() => setTheme("dark")}>🤠</button>
+          )}
+        </div>
       </div>
     </div>
   );
