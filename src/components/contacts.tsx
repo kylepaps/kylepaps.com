@@ -14,6 +14,8 @@ const Contacts = () => {
             <Link
               href={"https://www.linkedin.com/in/kyle-papizewski/"}
               className="text-sm hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               Kyle Papizewski
             </Link>
@@ -27,6 +29,8 @@ const Contacts = () => {
             <Link
               href={"https://github.com/kylepaps"}
               className="text-sm hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               kylepaps
             </Link>

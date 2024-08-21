@@ -19,6 +19,8 @@ const Work = () => {
               <Link
                 href={"https://www.mlsedigital.com/"}
                 className="flex items-center"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 <ExternalLinkIcon className="flex self-center hover:text-muted-foreground" />
               </Link>

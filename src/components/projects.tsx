@@ -16,6 +16,8 @@ const Projects = () => {
             <Link
               href={"https://www.rollout.fyi/"}
               className="flex items-center"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               <ExternalLinkIcon className="flex self-center hover:text-muted-foreground" />
             </Link>
@@ -38,6 +40,8 @@ const Projects = () => {
               <Link
                 href={"https://www.resumewizard.app/"}
                 className="flex items-center"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 <ExternalLinkIcon className="flex self-center hover:text-muted-foreground" />
               </Link>
