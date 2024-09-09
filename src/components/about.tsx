@@ -9,10 +9,7 @@ const About = () => {
           Hello! I&#39;m a software developer located in Toronto. I&#39;m
           currently working with MLSE as a Junior Backend Engineer, where
           I&#39;ve been able to build applications for the Toronto Maple Leafs,
-          Toronto Raptors, and associated fans. Aside from software development,
-          I enjoy running, golf, basketball, and travel. In 2023, I ran my first
-          marathon :). This year, I&#39;m training for the Toronto Waterfront
-          Marathon with a 3:45 goal.
+          Toronto Raptors, and associated fans.
         </span>
       </div>
     </div>
