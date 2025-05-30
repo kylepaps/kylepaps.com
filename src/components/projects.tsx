@@ -8,7 +8,7 @@ const Projects = () => {
       <span className="text-sm">Projects</span>
       <div className="flex flex-row justify-start">
         <div className="w-80 sm:w-96">
-          <span className="text-muted-foreground text-sm">In Progress</span>
+          <span className="text-muted-foreground text-sm">Sold</span>
         </div>
         <div className="flex flex-col gap-y-1 w-full">
           <div className="flex flex-row gap-x-2">

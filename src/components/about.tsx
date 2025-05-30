@@ -7,9 +7,9 @@ const About = () => {
       <div className="flex flex-col gap-y-4">
         <span className="text-muted-foreground text-sm">
           Hello! I&#39;m a software developer located in Toronto. I&#39;m
-          currently working with MLSE as a Junior Backend Engineer, where
-          I&#39;ve been able to build applications for the Toronto Maple Leafs,
-          Toronto Raptors, and associated fans.
+          currently working with MLSE as a Software Engineer, where I&#39;ve
+          been able to build applications for the Toronto Maple Leafs, Toronto
+          Raptors, and associated fans.
         </span>
       </div>
     </div>

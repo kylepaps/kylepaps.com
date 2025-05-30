@@ -15,7 +15,7 @@ const Work = () => {
           </div>
           <div className="flex flex-col gap-y-1 w-full">
             <div className="flex flex-row gap-x-2">
-              <div className="text-sm">Junior Backend Engineer</div>
+              <div className="text-sm">Software Engineer</div>
               <Link
                 href={"https://www.mlsedigital.com/"}
                 className="flex items-center"
